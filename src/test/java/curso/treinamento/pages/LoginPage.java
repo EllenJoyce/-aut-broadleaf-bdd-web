@@ -20,8 +20,6 @@ public class LoginPage {
     @FindBy (xpath = "//input[@type='submit']")
     WebElement botaoSign;
    
-    @FindBy (xpath=".//*[contains(text(),'Welcome Admin!')]")
-    WebElement texto;
     
   public boolean checkPage() {
 	  return botaoSign.isDisplayed();
@@ -34,9 +32,5 @@ public class LoginPage {
 	  botaoSign.click();
   }
 
-public boolean checkAposLogin() {
-	return texto.isDisplayed();
-	
-}
   
 }

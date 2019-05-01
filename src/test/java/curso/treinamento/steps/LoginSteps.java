@@ -6,6 +6,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
+import curso.treinamento.pages.HomePage;
 import curso.treinamento.pages.LoginPage;
 import curso.treinamento.setup.Hooks;
 
@@ -13,6 +14,8 @@ import curso.treinamento.setup.Hooks;
 public class LoginSteps {
 
 	private LoginPage loginPage = new LoginPage(Hooks.getDriver());
+	private HomePage  HomePage = new  HomePage(Hooks.getDriver());
+	
 
 	@Dado("^que eu esteja na tela de login​$")
 	public void queEuEstejaNaTelaDeLogin​() {
@@ -30,7 +33,7 @@ public class LoginSteps {
 	@Então("^sou autenticado com sucesso$")
 	public void sou_autenticado_com_sucesso() {
 		
-		Assert.assertTrue("Página Login não foi apresentada", loginPage.checkAposLogin());
+		Assert.assertTrue("Página Login não foi apresentada", HomePage.checkAposLogin());
 	}
 
 }
