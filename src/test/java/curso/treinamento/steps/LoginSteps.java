@@ -30,7 +30,7 @@ public class LoginSteps {
 	@Então("^sou autenticado com sucesso$")
 	public void sou_autenticado_com_sucesso() {
 		
-		
+		Assert.assertTrue("Página Login não foi apresentada", loginPage.checkAposLogin());
 	}
 
 }
