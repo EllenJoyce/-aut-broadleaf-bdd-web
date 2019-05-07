@@ -1,3 +1,6 @@
+/*Author: Ellen Joyce
+Desenvolvimento projeto Home Work*/
+
 package curso.treinamento.runners;
 
 import org.junit.runner.RunWith;
@@ -12,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 			features = {"src\\test\\resources\\features\\" },
 			glue = {"curso.treinamento.steps", "curso.treinamento.setup"},
 			snippets = SnippetType.CAMELCASE, 
-			tags = {"@Sprint1"} 
+			tags = {"@Sprint4"} 
 		)
 public class RunnerTest {
 	

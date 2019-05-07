@@ -1,3 +1,6 @@
+/*Author: Ellen Joyce
+Desenvolvimento projeto Home Work*/
+
 package curso.treinamento.setup;
 
 import org.openqa.selenium.WebDriver;
