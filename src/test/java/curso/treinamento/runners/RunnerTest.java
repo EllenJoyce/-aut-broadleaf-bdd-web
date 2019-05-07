@@ -11,11 +11,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		
+		    
+		    plugin = {"pretty","html:target/cucumber"},
+            format={"json:target/cucumber/cucumber.json"},
 			features = {"src\\test\\resources\\features\\" },
 			glue = {"curso.treinamento.steps", "curso.treinamento.setup"},
 			snippets = SnippetType.CAMELCASE, 
-			tags = {"@MenuCatalog"} 
+			tags = {""} 
 		)
 public class RunnerTest {
 	
